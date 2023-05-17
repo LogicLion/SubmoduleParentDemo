@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.doreamon.treasure.utils.getVersion
 import com.example.fathersondemo.ui.theme.FatherSonDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hello $name!，version:")
+    Text(text = "Hello $name!，version:${getVersion()}")
     println("测试提交11111111111")
 }
 
